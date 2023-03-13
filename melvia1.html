@@ -1,0 +1,57 @@
+<html>
+<head>
+ <style type="text/css">
+    h1 {
+         color: red;
+         text-decoration: bold;
+        }
+    p  {
+         color: green;
+       }
+ </style>
+
+ <script>
+    function change_h2 () 
+    {
+       $('h2').css('color', 'blue');
+    }
+
+    function add_h2_border () 
+    {
+       $('h2').css('border', "4px solid Green");
+    }
+
+    function change_p_color () 
+    {
+       var pFontColor = $('p').css('color');
+
+       if (pFontColor == "orange")
+       {
+          $('p').css('color', "black");
+       }
+       else
+       {
+          $('p').css('color', "orange");
+       }
+    } 
+ </script>
+</head>
+
+<body>
+<h1>This is our fun, but hideous little page!</h1>
+<p>This is a bit of text followed by a bit more text. It is 
+simply here as an example for changing CSS with jQuery!</p>
+
+<p style="border: 2px solid green;
+
+            color:blue;padding:10px">
+This is a green H2 Heading.... or is it?
+        
+
+    </p>
+
+<p>The h2 above this text was set with inline styling.</p>
+
+
+</body>
+</html>
